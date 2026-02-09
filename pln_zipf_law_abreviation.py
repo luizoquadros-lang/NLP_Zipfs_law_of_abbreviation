@@ -68,15 +68,22 @@ print()
 print("TOP 10 Spanish Words")
 print(df_spanish.head(10))
 
+#To do the plots, first we will assign the two axes (X, Y) and give the color and darkness to the dots inside
 plt.scatter(df_english['length'], df_english['frequency'], color='royalblue', s=25, alpha=0.5)
+#Then, we assign the scale to a logarithmic one, therefore results are easily readable
 plt.yscale('log')
+#We are now including words with a maxium length of 20 characters
 plt.xticks(range(1, 21))
+#Now, we give titles to the plot and the axes
 plt.title("Words in English Poems")
 plt.xlabel("Word Length")
 plt.ylabel("Word Frequency (log scale)")
+#To add the dotted lines in the background we do this
 plt.grid(True, linestyle='--')
+#Finally, we need to print the plot
 plt.show()
 
+#We do the same we did in English but with Spanish
 plt.scatter(df_spanish['length'], df_spanish['frequency'], color='green', s=25, alpha=0.3)
 plt.yscale('log')
 plt.xticks(range(1, 26))
