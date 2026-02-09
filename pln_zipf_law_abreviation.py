@@ -8,7 +8,7 @@ Original file is located at
 """
 
 #NLP_Zipfs_law_of_abbreviation
-#Authors: Luiz Quadros, Mengqi Liu and Nur Boada.
+#Authors: Luiz Quadros, Mengqi Liu and Nur Rodriguez Boada.
 
 #We will start by importing the necessary packages for our task
 import urllib.request
